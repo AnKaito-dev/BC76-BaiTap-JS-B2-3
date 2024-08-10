@@ -1,0 +1,31 @@
+body {
+  background-color: #F7F9FC;
+}
+
+.nav-link:hover {
+  background-color: lightskyblue;
+}
+
+.tab-content {
+  box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
+}
+
+.tab-content:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+}
+
+.topic {
+  border-right: 1px solid lightskyblue;
+}
+
+.topic p {
+  text-align: left;
+}
+
+.implement button:hover {
+  font-weight: 600;
+}
+
+.implement .result {
+  text-align: center;
+}

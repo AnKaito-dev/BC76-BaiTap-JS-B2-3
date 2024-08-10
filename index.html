@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>BaiTap_JS_B2-3</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+    <header>
+    </header>
+    <section class="js-exercise">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-lg-10 mx-auto">
+            <div class="exercise_tab text-center">
+              <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link mx-2 fs-5 active" id="pills-b1-tab" data-bs-toggle="pill" data-bs-target="#pills-b1"
+                    type="button" role="tab" aria-controls="pills-b1" aria-selected="true">
+                    <i class="fa-brands fa-node-js px-3 fs-4 d-flex align-items-center"></i>
+                    Bài 1
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link mx-2 fs-5" id="pills-b2-tab" data-bs-toggle="pill" data-bs-target="#pills-b2"
+                    type="button" role="tab" aria-controls="pills-b2" aria-selected="false">
+                    <i class="fa-brands fa-node-js px-3 fs-4 d-flex align-items-center"></i>
+                    Bài 2
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link mx-2 fs-5" id="pills-b3-tab" data-bs-toggle="pill" data-bs-target="#pills-b3"
+                    type="button" role="tab" aria-controls="pills-b3" aria-selected="false">
+                    <i class="fa-brands fa-node-js px-3 fs-4 d-flex align-items-center"></i>
+                    Bài 3
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link mx-2 fs-5" id="pills-b4-tab" data-bs-toggle="pill" data-bs-target="#pills-b4"
+                    type="button" role="tab" aria-controls="pills-b4" aria-selected="false">
+                    <i class="fa-brands fa-node-js px-3 fs-4 d-flex align-items-center"></i>
+                    Bài 4
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link mx-2 fs-5" id="pills-b5-tab" data-bs-toggle="pill" data-bs-target="#pills-b5"
+                    type="button" role="tab" aria-controls="pills-b5" aria-selected="false">
+                    <i class="fa-brands fa-node-js px-3 fs-4 d-flex align-items-center"></i>
+                    Bài 5
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content mt-4" id="pills-tabContent">
+                <div class="tab-pane show active" id="pills-b1" role="tabpanel" aria-labelledby="pills-b1-tab"
+                  tabindex="0">
+                  <div class="title pt-3">
+                    <h4 class="text-primary">Tính tiền lương nhân viên</h4>
+                    <i class="fa-solid fa-hand-holding-dollar fs-5 text-primary"></i>
+                  </div>
+                  <div class="row p-4">
+                    <div class="topic col-md-6">
+                      <p class="text-primary-emphasis mb-0">
+                        Viết chương trình tính tiền lương nhân viên. <br>
+                        Lương 1 ngày: 100.000 <br>
+                        Cho người dùng nhập vào số ngày làm. <br>
+                        Công thức tính lương: <br>
+                        Lương 1 ngày * số ngày làm
+                      </p>
+                    </div>
+                    <div class="implement col-md-6 mt-md-0 mt-5">
+                      <input type="text" class="form-control mb-2" name="salary" id="salary" placeholder="Nhập lương một ngày"
+                      />
+                      <input type="text" class="form-control mb-2" name="day" id="day" placeholder="Nhập số ngày làm"
+                      />
+                      <button class="btn btn-primary mb-3" id="salary-calculator">Tính lương</button>
+                      <input type="text" class="form-control mb-2 bg-success-subtle result" id="salary-result" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="pills-b2" role="tabpanel" aria-labelledby="pills-b2-tab"
+                  tabindex="0">
+                  <div class="title pt-3">
+                    <h4 class="text-primary">Tính giá trị trung bình</h4>
+                    <i class="fa-solid fa-divide fs-5 text-primary"></i>
+                  </div>
+                  <div class="row p-4">
+                    <div class="topic col-md-6">
+                      <p class="text-primary-emphasis mb-0">
+                        Viết chương trình nhập vào 5 số thực. <br>
+                        Tính giá trị trung bình của 5 số này và xuất ra màn hình. <br>
+                      </p>
+                    </div>
+                    <div class="implement col-md-6 mt-md-0 mt-5">
+                      <input type="text" class="form-control mb-2" name="number-1" id="number-1" placeholder="Nhập số thứ 1"
+                      />
+                      <input type="text" class="form-control mb-2" name="number-2" id="number-2" placeholder="Nhập số thứ 2"
+                      />
+                      <input type="text" class="form-control mb-2" name="number-3" id="number-3" placeholder="Nhập số thứ 3"
+                      />
+                      <input type="text" class="form-control mb-2" name="number-4" id="number-4" placeholder="Nhập số thứ 4"
+                      />
+                      <input type="text" class="form-control mb-2" name="number-5" id="number-5" placeholder="Nhập số thứ 5"
+                      />
+                      <button class="btn btn-primary mb-3" id="average-calculator">Tính trung bình</button>
+                      <input type="text" class="form-control mb-2 bg-success-subtle result" id="average-result" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="pills-b3" role="tabpanel" aria-labelledby="pills-b3-tab"
+                  tabindex="0">
+                  <div class="title pt-3">
+                    <h4 class="text-primary">Quy đổi tiền</h4>
+                    <i class="fa-solid fa-money-bill-transfer fs-5 text-primary"></i>
+                  </div>
+                  <div class="row p-4">
+                    <div class="topic col-md-6">
+                      <p class="text-primary-emphasis mb-0">
+                        Giá USD hiện nay đang là 23.500 VND <br>
+                        Viết chương trình quy đổi từ USD sang VND. <br>
+                        Cho người dùng nhập vào số tiền USD. <br>
+                        Tính và xuất ra số tiền sau quy đổi VND. <br>
+                      </p>
+                    </div>
+                    <div class="implement col-md-6 mt-md-0 mt-5">
+                      <input type="text" class="form-control mb-2" name="usd" id="usd" placeholder="Nhập số tiền USD"
+                      />
+                      <button class="btn btn-primary mb-3" id="convert">Quy đổi</button>
+                      <input type="text" class="form-control mb-2 bg-success-subtle result" id="convert-result" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="pills-b4" role="tabpanel" aria-labelledby="pills-b4-tab"
+                  tabindex="0">
+                  <div class="title pt-3">
+                    <h4 class="text-primary">Tính diện tích và chu vi</h4>
+                    <i class="fa-solid fa-chart-area fs-5 text-primary"></i>
+                  </div>
+                  <div class="row p-4">
+                    <div class="topic col-md-6">
+                      <p class="text-primary-emphasis mb-0">
+                        Viết chương trình nhập vào 2 chiều dài và rộng của hình chữ nhật. <br>
+                        Tính và xuất ra diện tích, chu vi của hình chữ nhật đó.
+                      </p>
+                    </div>
+                    <div class="implement col-md-6 mt-md-0 mt-5">
+                      <input type="text" class="form-control mb-2" name="width" id="width" placeholder="Nhập chiều dài"
+                      />
+                      <input type="text" class="form-control mb-2" name="height" id="height" placeholder="Nhập chiều rộng"
+                      />
+                      <button class="btn btn-primary mb-3" id="area-perimeter">Tính</button>
+                      <input type="text" class="form-control mb-2 bg-success-subtle result" id="area-result" disabled>
+                      <input type="text" class="form-control mb-2 bg-success-subtle result" id="perimeter-result" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="pills-b5" role="tabpanel" aria-labelledby="pills-b5-tab"
+                  tabindex="0">
+                  <div class="title pt-3">
+                    <h4 class="text-primary">Tính tổng 2 ký số</h4>
+                    <i class="fa-solid fa-plus fs-5 text-primary"></i>
+                  </div>
+                  <div class="row p-4">
+                    <div class="topic col-md-6">
+                      <p class="text-primary-emphasis mb-0">
+                        Viết chương trình nhập vào 1 số có 2 chữ số (VD: 12, 44, 83). <br>
+                        Tính tổng 2 ký số của số vừa nhập.
+                      </p>
+                    </div>
+                    <div class="implement col-md-6 mt-md-0 mt-5">
+                      <input type="text" class="form-control mb-2" name="num2num" id="num2num" placeholder="Nhập vào số có 2 chữ số"
+                      />
+                      <button class="btn btn-primary mb-3" id="sum-number">Tính tổng</button>
+                      <input type="text" class="form-control mb-2 bg-success-subtle result" id="sum-result" disabled>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
